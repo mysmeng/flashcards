@@ -7505,6 +7505,662 @@
                     "romaji": "raishuu, sakubun no konkuuru ga arimasu"
                 }
             ]
+        },
+        {
+            "lessonNumber": 16,
+            "lessonName": "活动邀约",
+            "cards": [
+                {
+                    "id": 1,
+                    "word": "サークル",
+                    "reading": "サークル",
+                    "meaning": "社团",
+                    "level": "N2",
+                    "example": "サークルの仲間たちとお花見に行くのですが。",
+                    "exampleCN": "我要和社团的伙伴们去赏花。",
+                    "romaji": "saakuru no nakama-tachi to ohanami ni iku no desu ga"
+                },
+                {
+                    "id": 2,
+                    "word": "仲間",
+                    "reading": "なかま",
+                    "meaning": "伙伴,朋友",
+                    "level": "N3",
+                    "example": "サークルの仲間たちとお花見に行きます。",
+                    "exampleCN": "和社团的伙伴们去赏花。",
+                    "romaji": "saakuru no nakama-tachi to ohanami ni ikimasu"
+                },
+                {
+                    "id": 3,
+                    "word": "-たち",
+                    "reading": "-たち",
+                    "meaning": "们",
+                    "level": "N5",
+                    "example": "サークルの仲間たちとお花見に行きます。",
+                    "exampleCN": "和社团的伙伴们去赏花。",
+                    "romaji": "saakuru no nakama-tachi to ohanami ni ikimasu"
+                },
+                {
+                    "id": 4,
+                    "word": "花見",
+                    "reading": "はなみ",
+                    "meaning": "赏(樱)花",
+                    "level": "N4",
+                    "example": "サークルの仲間たちとお花見に行きます。",
+                    "exampleCN": "和社团的伙伴们去赏花。",
+                    "romaji": "saakuru no nakama-tachi to ohanami ni ikimasu"
+                },
+                {
+                    "id": 5,
+                    "word": "講演会",
+                    "reading": "こうえんかい",
+                    "meaning": "报告会,演讲会",
+                    "level": null,
+                    "example": "村上夏樹先生の講演会があるんですよ。",
+                    "exampleCN": "有村上夏树老师的演讲会哦。",
+                    "romaji": "murakami natsuki sensei no kouenkai ga arun desu yo"
+                },
+                {
+                    "id": 6,
+                    "word": "ウェブサイト",
+                    "reading": "ウェブサイト",
+                    "meaning": "网站",
+                    "level": null,
+                    "example": "2ヶ月前にウェブサイトから参加の申し込みをしました。",
+                    "exampleCN": "两个月前在网站上申请参加了。",
+                    "romaji": "ni-kagetsu mae ni webusaito kara sanka no moushikomi o shimashita"
+                },
+                {
+                    "id": 7,
+                    "word": "参加",
+                    "reading": "さんか",
+                    "meaning": "参加",
+                    "level": "N3",
+                    "example": "参加の申し込みをしました。",
+                    "exampleCN": "提交了参加申请。",
+                    "romaji": "sanka no moushikomi o shimashita"
+                },
+                {
+                    "id": 8,
+                    "word": "申し込み",
+                    "reading": "もうしこみ",
+                    "meaning": "申请",
+                    "level": "N2",
+                    "example": "参加の申し込みをしました。",
+                    "exampleCN": "提交了参加申请。",
+                    "romaji": "sanka no moushikomi o shimashita"
+                },
+                {
+                    "id": 9,
+                    "word": "当選",
+                    "reading": "とうせん",
+                    "meaning": "当选,中选",
+                    "level": "N1",
+                    "example": "昨日、当選のメールが届きました！",
+                    "exampleCN": "昨天收到了中选的邮件！",
+                    "romaji": "kinou, tousen no meeru ga todokimashita!"
+                },
+                {
+                    "id": 10,
+                    "word": "届く",
+                    "reading": "とどく",
+                    "meaning": "送达",
+                    "level": "N3",
+                    "example": "昨日、当選のメールが届きました！",
+                    "exampleCN": "昨天收到了中选的邮件！",
+                    "romaji": "kinou, tousen no meeru ga todokimashita!"
+                },
+                {
+                    "id": 11,
+                    "word": "始まる",
+                    "reading": "はじまる",
+                    "meaning": "开始",
+                    "level": "N5",
+                    "example": "何時に始まりますか。",
+                    "exampleCN": "几点开始？",
+                    "romaji": "nan-ji ni hajimarimasu ka"
+                },
+                {
+                    "id": 12,
+                    "word": "出発",
+                    "reading": "しゅっぱつ",
+                    "meaning": "出发",
+                    "level": "N4",
+                    "example": "1時半ごろに出発しましょうか。",
+                    "exampleCN": "1点半左右出发吧？",
+                    "romaji": "ichi-ji-han goro ni shuppatsu shimashou ka"
+                },
+                {
+                    "id": 13,
+                    "word": "ところで",
+                    "reading": "ところで",
+                    "meaning": "话说(转移话题)",
+                    "level": "N3",
+                    "example": "ところで、ジョージさんは今、時間がありますか。",
+                    "exampleCN": "话说，乔治你现在有时间吗？",
+                    "romaji": "tokorode, jooji-san wa ima, jikan ga arimasu ka"
+                },
+                {
+                    "id": 14,
+                    "word": "家",
+                    "reading": "うち",
+                    "meaning": "家,(我)家",
+                    "level": "N5",
+                    "example": "村上先生の小説なら、家には何冊もありますが…",
+                    "exampleCN": "如果是村上老师的小说，我家里倒是有好几本…",
+                    "romaji": "murakami-sensei no shousetsu nara, uchi ni wa nansatsu mo arimasu ga..."
+                },
+                {
+                    "id": 15,
+                    "word": "何冊",
+                    "reading": "なんさつ",
+                    "meaning": "几册",
+                    "level": null,
+                    "example": "家には何冊もありますが…",
+                    "exampleCN": "我家里有好几本…",
+                    "romaji": "uchi ni wa nansatsu mo arimasu ga..."
+                },
+                {
+                    "id": 16,
+                    "word": "サイン",
+                    "reading": "サイン",
+                    "meaning": "签字,签名",
+                    "level": "N3",
+                    "example": "でも、サインはほしいでしょ？",
+                    "exampleCN": "但是，想要签名吧？",
+                    "romaji": "demo, sain wa hoshii desho?"
+                },
+                {
+                    "id": 17,
+                    "word": "歩く",
+                    "reading": "あるく",
+                    "meaning": "步行,走路",
+                    "level": "N5",
+                    "example": "歩きながら、相談しましょう。",
+                    "exampleCN": "我们边走边商量吧。",
+                    "romaji": "arukinagara, soudan shimashou"
+                },
+                {
+                    "id": 18,
+                    "word": "相談",
+                    "reading": "そうだん",
+                    "meaning": "商量",
+                    "level": "N4",
+                    "example": "歩きながら、相談しましょう。",
+                    "exampleCN": "我们边走边商量吧。",
+                    "romaji": "arukinagara, soudan shimashou"
+                },
+                {
+                    "id": 19,
+                    "word": "散歩",
+                    "reading": "さんぽ",
+                    "meaning": "散步",
+                    "level": "N5",
+                    "example": "散歩に出かけましょうか。",
+                    "exampleCN": "出去散散步吧？",
+                    "romaji": "sanpo ni dekakemashou ka"
+                },
+                {
+                    "id": 20,
+                    "word": "届ける",
+                    "reading": "とどける",
+                    "meaning": "送交,送去",
+                    "level": "N4",
+                    "example": "資料を届けに来ました。",
+                    "exampleCN": "（我）来送资料了。",
+                    "romaji": "shiryou o todoke ni kimashita"
+                },
+                {
+                    "id": 21,
+                    "word": "考える",
+                    "reading": "かんがえる",
+                    "meaning": "想,思考",
+                    "level": "N4",
+                    "example": "考えながら、パワーポイントを作ります。",
+                    "exampleCN": "一边思考，一边制作PPT。",
+                    "romaji": "kangaenagara, pawaapointo o tsukurimasu"
+                },
+                {
+                    "id": 22,
+                    "word": "パワーポイント",
+                    "reading": "パワーポイント",
+                    "meaning": "幻灯片",
+                    "level": null,
+                    "example": "考えながら、パワーポイントを作ります。",
+                    "exampleCN": "一边思考，一边制作PPT。",
+                    "romaji": "kangaenagara, pawaapointo o tsukurimasu"
+                },
+                {
+                    "id": 23,
+                    "word": "音楽",
+                    "reading": "おんがく",
+                    "meaning": "音乐",
+                    "level": "N5",
+                    "example": "弟はいつも音楽を聴きながら、宿題をします。",
+                    "exampleCN": "弟弟总是边听音乐边写作业。",
+                    "romaji": "otouto wa itsumo ongaku o kikinagara, shukudai o shimasu"
+                },
+                {
+                    "id": 24,
+                    "word": "議論",
+                    "reading": "ぎろん",
+                    "meaning": "议论,争辩",
+                    "level": "N3",
+                    "example": "議論は3日も続きました。",
+                    "exampleCN": "讨论持续了三天之久。",
+                    "romaji": "giron wa mikka mo tsuzukimashita"
+                },
+                {
+                    "id": 25,
+                    "word": "続く",
+                    "reading": "つづく",
+                    "meaning": "连续",
+                    "level": "N4",
+                    "example": "議論は3日も続きました。",
+                    "exampleCN": "讨论持续了三天之久。",
+                    "romaji": "giron wa mikka mo tsuzukimashita"
+                },
+                {
+                    "id": 26,
+                    "word": "日系企業",
+                    "reading": "にっけいきぎょう",
+                    "meaning": "日企",
+                    "level": null,
+                    "example": "日系企業を5社も訪問しました。",
+                    "exampleCN": "访问了五家之多的日企。",
+                    "romaji": "nikkei kigyou o go-sha mo houmon shimashita"
+                },
+                {
+                    "id": 27,
+                    "word": "企業",
+                    "reading": "きぎょう",
+                    "meaning": "企业",
+                    "level": "N3",
+                    "example": "日系企業を5社も訪問しました。",
+                    "exampleCN": "访问了五家之多的日企。",
+                    "romaji": "nikkei kigyou o go-sha mo houmon shimashita"
+                },
+                {
+                    "id": 28,
+                    "word": "-社",
+                    "reading": "しゃ",
+                    "meaning": "家(公司)",
+                    "level": null,
+                    "example": "日系企業を5社も訪問しました。",
+                    "exampleCN": "访问了五家之多的日企。",
+                    "romaji": "nikkei kigyou o go-sha mo houmon shimashita"
+                },
+                {
+                    "id": 29,
+                    "word": "訪問",
+                    "reading": "ほうもん",
+                    "meaning": "访问,拜访",
+                    "level": "N3",
+                    "example": "日系企業を5社も訪問しました。",
+                    "exampleCN": "访问了五家之多的日企。",
+                    "romaji": "nikkei kigyou o go-sha mo houmon shimashita"
+                },
+                {
+                    "id": 30,
+                    "word": "何度",
+                    "reading": "なんど",
+                    "meaning": "几回,几度",
+                    "level": null,
+                    "example": "あの映画は何度も見ましたよ。",
+                    "exampleCN": "那个电影看了很多次呢。",
+                    "romaji": "ano eiga wa nando mo mimashita yo"
+                },
+                {
+                    "id": 31,
+                    "word": "大事",
+                    "reading": "だいじ",
+                    "meaning": "重要,要紧",
+                    "level": "N4",
+                    "example": "勉強のほうが大事でしょう？",
+                    "exampleCN": "学习更重要吧？",
+                    "romaji": "benkyou no hou ga daiji deshou?"
+                },
+                {
+                    "id": 32,
+                    "word": "タバコ",
+                    "reading": "タバコ",
+                    "meaning": "香烟",
+                    "level": "N5",
+                    "example": "タバコを止めましょうよ。",
+                    "exampleCN": "戒烟吧。",
+                    "romaji": "tabako o yamemashou yo"
+                },
+                {
+                    "id": 33,
+                    "word": "止める",
+                    "reading": "やめる",
+                    "meaning": "停止,戒除",
+                    "level": "N4",
+                    "example": "タバコを止めましょうよ。",
+                    "exampleCN": "戒烟吧。",
+                    "romaji": "tabako o yamemashou yo"
+                },
+                {
+                    "id": 34,
+                    "word": "体",
+                    "reading": "からだ",
+                    "meaning": "身体",
+                    "level": "N5",
+                    "example": "体に悪いでしょう？",
+                    "exampleCN": "对身体不好吧？",
+                    "romaji": "karada ni warui deshou?"
+                },
+                {
+                    "id": 35,
+                    "word": "悪い",
+                    "reading": "わるい",
+                    "meaning": "坏,不好",
+                    "level": "N5",
+                    "example": "体に悪いでしょう？",
+                    "exampleCN": "对身体不好吧？",
+                    "romaji": "karada ni warui deshou?"
+                },
+                {
+                    "id": 36,
+                    "word": "海外",
+                    "reading": "かいがい",
+                    "meaning": "海外,国外",
+                    "level": "N4",
+                    "example": "海外旅行のためのタオルを買いました。",
+                    "exampleCN": "买了为海外旅行准备的毛巾。",
+                    "romaji": "kaigai ryokou no tame no taoru o kaimashita"
+                },
+                {
+                    "id": 37,
+                    "word": "タオル",
+                    "reading": "タオル",
+                    "meaning": "毛巾",
+                    "level": "N4",
+                    "example": "海外旅行のためのタオルを買いました。",
+                    "exampleCN": "买了为海外旅行准备的毛巾。",
+                    "romaji": "kaigai ryokou no tame no taoru o kaimashita"
+                },
+                {
+                    "id": 38,
+                    "word": "期末",
+                    "reading": "きまつ",
+                    "meaning": "期末",
+                    "level": "N3",
+                    "example": "期末試験のための勉強計画を考えます。",
+                    "exampleCN": "思考一个为了期末考试的学习计划。",
+                    "romaji": "kimatsu shiken no tame no benkyou keikaku o kangaemasu"
+                },
+                {
+                    "id": 39,
+                    "word": "お腹",
+                    "reading": "おなか",
+                    "meaning": "肚子,胃",
+                    "level": "N5",
+                    "example": "お腹が痛いんですか。",
+                    "exampleCN": "是肚子痛吗？",
+                    "romaji": "onaka ga itain desu ka"
+                },
+                {
+                    "id": 40,
+                    "word": "痛い",
+                    "reading": "いたい",
+                    "meaning": "疼的,痛的",
+                    "level": "N5",
+                    "example": "お腹が痛いんですか。",
+                    "exampleCN": "是肚子痛吗？",
+                    "romaji": "onaka ga itain desu ka"
+                },
+                {
+                    "id": 41,
+                    "word": "-限",
+                    "reading": "げん",
+                    "meaning": "(第) 节课",
+                    "level": null,
+                    "example": "3限の講義の教室は301教室ですよね。",
+                    "exampleCN": "第三节课的教室在301，没错吧？",
+                    "romaji": "san-gen no kougi no kyoushitsu wa san-maru-ichi kyoushitsu desu yo ne"
+                },
+                {
+                    "id": 42,
+                    "word": "結果",
+                    "reading": "けっか",
+                    "meaning": "结果",
+                    "level": "N3",
+                    "example": "昨日の試合の結果はどうでした？",
+                    "exampleCN": "昨天比赛的结果怎样了？",
+                    "romaji": "kinou no shiai no kekka wa dou deshita?"
+                },
+                {
+                    "id": 43,
+                    "word": "勝つ",
+                    "reading": "かつ",
+                    "meaning": "赢,取胜",
+                    "level": "N4",
+                    "example": "勝ちましたよ。",
+                    "exampleCN": "（我们）赢了哦！",
+                    "romaji": "kachimashita yo"
+                },
+                {
+                    "id": 44,
+                    "word": "スパイダーマン",
+                    "reading": "スパイダーマン",
+                    "meaning": "蜘蛛侠",
+                    "level": null,
+                    "example": "スパイダーマンはかっこいいですよね。",
+                    "exampleCN": "蜘蛛侠好帅呀。",
+                    "romaji": "supaidaaman wa kakkoii desu yo ne"
+                },
+                {
+                    "id": 45,
+                    "word": "意味",
+                    "reading": "いみ",
+                    "meaning": "意思,含义",
+                    "level": "N4",
+                    "example": "スパイダーはどんな意味ですか。",
+                    "exampleCN": "Spider是什么意思呀？",
+                    "romaji": "supaidaa wa donna imi desu ka"
+                },
+                {
+                    "id": 46,
+                    "word": "スーパー",
+                    "reading": "スーパー",
+                    "meaning": "超市",
+                    "level": "N4",
+                    "example": "いっしょにスーパーへ行きませんか。",
+                    "exampleCN": "要不要一起去超市？",
+                    "romaji": "issho ni suupaa e ikimasen ka"
+                },
+                {
+                    "id": 47,
+                    "word": "林檎",
+                    "reading": "りんご",
+                    "meaning": "苹果",
+                    "level": "N4",
+                    "example": "スーパーで林檎を買います。",
+                    "exampleCN": "在超市买苹果。",
+                    "romaji": "suupaa de ringo o kaimasu"
+                },
+                {
+                    "id": 48,
+                    "word": "アイス",
+                    "reading": "アイス",
+                    "meaning": "冰;冰淇淋",
+                    "level": null,
+                    "example": "コンビニでアイスを買いましょう。",
+                    "exampleCN": "在便利店买个冰淇淋吧。",
+                    "romaji": "konbini de aisu o kaimashou"
+                },
+                {
+                    "id": 49,
+                    "word": "顔色",
+                    "reading": "かおいろ",
+                    "meaning": "脸色",
+                    "level": "N4",
+                    "example": "顔色が悪いですね。",
+                    "exampleCN": "你的脸色不好啊。",
+                    "romaji": "kaoiro ga warui desu ne"
+                },
+                {
+                    "id": 50,
+                    "word": "頭",
+                    "reading": "あたま",
+                    "meaning": "头,脑袋",
+                    "level": "N5",
+                    "example": "頭が痛いです。",
+                    "exampleCN": "头疼。",
+                    "romaji": "atama ga itai desu"
+                },
+                {
+                    "id": 51,
+                    "word": "薬",
+                    "reading": "くすり",
+                    "meaning": "药",
+                    "level": "N5",
+                    "example": "薬を飲みます。",
+                    "exampleCN": "吃药。",
+                    "romaji": "kusuri o nomimasu"
+                },
+                {
+                    "id": 52,
+                    "word": "病院",
+                    "reading": "びょういん",
+                    "meaning": "医院",
+                    "level": "N5",
+                    "example": "病院に行きます。",
+                    "exampleCN": "去医院。",
+                    "romaji": "byouin ni ikimasu"
+                },
+                {
+                    "id": 53,
+                    "word": "博物館",
+                    "reading": "はくぶつかん",
+                    "meaning": "博物馆",
+                    "level": "N4",
+                    "example": "博物館へ行きます。",
+                    "exampleCN": "去博物馆。",
+                    "romaji": "hakubutsukan e ikimasu"
+                },
+                {
+                    "id": 54,
+                    "word": "残業",
+                    "reading": "ざんぎょう",
+                    "meaning": "加班",
+                    "level": null,
+                    "example": "会社で残業します。",
+                    "exampleCN": "在公司加班。",
+                    "romaji": "kaisha de zangyou shimasu"
+                },
+                {
+                    "id": 55,
+                    "word": "やっぱり",
+                    "reading": "やっぱり",
+                    "meaning": "果然,还是",
+                    "level": "N3",
+                    "example": "やっぱり行きません。",
+                    "exampleCN": "还是不去了。",
+                    "romaji": "yappari ikimasen"
+                },
+                {
+                    "id": 56,
+                    "word": "上野公園",
+                    "reading": "うえのこうえん",
+                    "meaning": "上野公园",
+                    "level": "N5",
+                    "example": "上野公園へ花見に行きます。",
+                    "exampleCN": "去上野公园赏花。",
+                    "romaji": "ueno kouen e hanami ni ikimasu"
+                },
+                {
+                    "id": 57,
+                    "word": "体育館",
+                    "reading": "たいいくかん",
+                    "meaning": "体育馆",
+                    "level": null,
+                    "example": "体育館へ試合を見に行きます。",
+                    "exampleCN": "去体育馆看比赛。",
+                    "romaji": "taiikukan e shiai o mi ni ikimasu"
+                },
+                {
+                    "id": 58,
+                    "word": "ジュース",
+                    "reading": "ジュース",
+                    "meaning": "果汁",
+                    "level": "N5",
+                    "example": "どのジュースがいいですか。",
+                    "exampleCN": "哪种果汁好呢？",
+                    "romaji": "dono juusu ga ii desu ka"
+                },
+                {
+                    "id": 59,
+                    "word": "財布",
+                    "reading": "さいふ",
+                    "meaning": "钱包",
+                    "level": "N5",
+                    "example": "財布にはカードが10枚もあります。",
+                    "exampleCN": "钱包里有10张卡之多。",
+                    "romaji": "saifu ni wa kaado ga juu-mai mo arimasu"
+                },
+                {
+                    "id": 60,
+                    "word": "患者",
+                    "reading": "かんじゃ",
+                    "meaning": "患者",
+                    "level": "N5",
+                    "example": "病院には患者が500人もいます。",
+                    "exampleCN": "医院里有500名患者之多。",
+                    "romaji": "byouin ni wa kanja ga go-hyaku-nin mo imasu"
+                },
+                {
+                    "id": 61,
+                    "word": "コンサート",
+                    "reading": "コンサート",
+                    "meaning": "音乐会",
+                    "level": "N4",
+                    "example": "コンサートへ行きませんか。",
+                    "exampleCN": "要不要去听音乐会？",
+                    "romaji": "konsaato e ikimasen ka"
+                },
+                {
+                    "id": 62,
+                    "word": "新幹線",
+                    "reading": "しんかんせん",
+                    "meaning": "新干线",
+                    "level": "N4",
+                    "example": "新幹線で二時間ぐらいです。",
+                    "exampleCN": "坐新干线大概两个小时。",
+                    "romaji": "shinkansen de ni-jikan gurai desu"
+                },
+                {
+                    "id": 63,
+                    "word": "サマーセール",
+                    "reading": "サマーセール",
+                    "meaning": "夏季打折",
+                    "level": null,
+                    "example": "いっしょにサマーセールへ行きませんか。",
+                    "exampleCN": "要不要一起去夏季促销？",
+                    "romaji": "issho ni samaaseeru e ikimasen ka"
+                },
+                {
+                    "id": 64,
+                    "word": "ドレス",
+                    "reading": "ドレス",
+                    "meaning": "洋装",
+                    "level": "N3",
+                    "example": "どんなドレスがいいかな。",
+                    "exampleCN": "什么样的洋装好呢。",
+                    "romaji": "donna doresu ga ii ka na"
+                },
+                {
+                    "id": 65,
+                    "word": "グッズ",
+                    "reading": "グッズ",
+                    "meaning": "商品,物品",
+                    "level": null,
+                    "example": "どのグッズがいいかな。",
+                    "exampleCN": "哪个周边商品好呢。",
+                    "romaji": "dono guzzu ga ii ka na"
+                }
+            ]
         }
     ]
 }
