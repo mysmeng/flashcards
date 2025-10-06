@@ -1,35 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, ChevronLeft, ChevronRight, RotateCcw, Eye, EyeOff, Target, Check, X, BarChart3, Brain, BookOpen } from 'lucide-react';
+import { loadFlashcards, transformLessonsToCards, initializeSRSData } from './utils/dataLoader';
 
 const FlashcardApp = () => {
-  const initialFlashcards = [
-    { id: 1, lesson: 11, word: '電気屋', reading: 'でんきや', meaning: '电器商店', level: 'N5', example: '電気屋で新しいテレビを買いました。', exampleCN: '我在电器店买了新电视。', romaji: 'den-ki-ya de a-ta-ra-shii te-re-bi o ka-i-ma-shi-ta' },
-    { id: 2, lesson: 11, word: 'ほしい', reading: 'ほしい', meaning: '想要、希望得到', level: 'N5', example: '新しいカメラがほしいです。', exampleCN: '我想要新相机。', romaji: 'a-ta-ra-shii ka-me-ra ga ho-shii de-su' },
-    { id: 3, lesson: 11, word: '得', reading: 'とく', meaning: '划算，好处', level: 'N3', example: 'このセールは得ですね。', exampleCN: '这次促销很划算呢。', romaji: 'ko-no se-e-ru wa to-ku de-su ne' },
-    { id: 4, lesson: 11, word: '性能', reading: 'せいのう', meaning: '性能', level: 'N3', example: 'このパソコンは性能がいいです。', exampleCN: '这台电脑性能很好。', romaji: 'ko-no pa-so-kon wa se-i-no-u ga i-i de-su' },
-    { id: 5, lesson: 11, word: '白い', reading: 'しろい', meaning: '白色的', level: 'N5', example: '白いシャツを着ています。', exampleCN: '我穿着白衬衫。', romaji: 'shi-ro-i sha-tsu o ki-te i-ma-su' },
-    { id: 6, lesson: 11, word: '重さ', reading: 'おもさ', meaning: '重量', level: 'N5', example: 'この荷物の重さはどれくらいですか。', exampleCN: '这个行李有多重？', romaji: 'ko-no ni-mo-tsu no o-mo-sa wa do-re-ku-ra-i de-su ka' },
-    { id: 7, lesson: 11, word: 'どれくらい', reading: 'どれくらい', meaning: '多少', level: 'N5', example: '時間はどれくらいかかりますか。', exampleCN: '需要多长时间？', romaji: 'ji-kan wa do-re-ku-ra-i ka-ka-ri-ma-su ka' },
-    { id: 8, lesson: 11, word: 'キロ', reading: 'キロ', meaning: '千克、千米', level: 'N5', example: '体重は60キロです。', exampleCN: '体重是60公斤。', romaji: 'ta-i-juu wa ro-ku-juu ki-ro de-su' },
-    { id: 9, lesson: 11, word: 'ちょっと', reading: 'ちょっと', meaning: '稍微，一点儿', level: 'N5', example: 'ちょっと待ってください。', exampleCN: '请稍等一下。', romaji: 'cho-tto ma-tte ku-da-sa-i' },
-    { id: 10, lesson: 11, word: '重い', reading: 'おもい', meaning: '沉重的', level: 'N5', example: 'このスーツケースは重いです。', exampleCN: '这个行李箱很重。', romaji: 'ko-no su-u-tsu-ke-e-su wa o-mo-i de-su' }
-  ];
-
-  const initializeSRSData = () => {
-    return initialFlashcards.map(card => ({
-      ...card,
-      status: 'learning',
-      interval: 0,
-      easeFactor: 2.5,
-      repetitions: 0,
-      nextReview: new Date().toISOString(),
-      lastReview: null,
-      correctCount: 0,
-      incorrectCount: 0
-    }));
-  };
-
-  const [srsData, setSRSData] = useState(initializeSRSData);
+  const [srsData, setSRSData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [selectedVoice, setSelectedVoice] = useState('auto');
@@ -48,6 +24,26 @@ const FlashcardApp = () => {
     if (speechSynthesis.onvoiceschanged !== undefined) {
       speechSynthesis.onvoiceschanged = loadVoices;
     }
+  }, []);
+
+  // 加载单词数据
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true);
+        const data = await loadFlashcards();
+        const cards = transformLessonsToCards(data);
+        const initializedData = initializeSRSData(cards);
+        setSRSData(initializedData);
+        setLoading(false);
+      } catch (err) {
+        console.error('Error loading flashcards:', err);
+        setError('加载数据失败，请刷新页面重试');
+        setLoading(false);
+      }
+    };
+
+    loadData();
   }, []);
 
   const getFilteredCards = () => {
@@ -207,10 +203,57 @@ const FlashcardApp = () => {
     learning: srsData.filter(c => c.status === 'learning').length,
     reviewing: srsData.filter(c => c.status === 'reviewing').length,
     mastered: srsData.filter(c => c.status === 'mastered').length,
-    accuracy: sessionStats.correct + sessionStats.incorrect > 0 
-      ? Math.round((sessionStats.correct / (sessionStats.correct + sessionStats.incorrect)) * 100) 
+    accuracy: sessionStats.correct + sessionStats.incorrect > 0
+      ? Math.round((sessionStats.correct / (sessionStats.correct + sessionStats.incorrect)) * 100)
       : 0
   };
+
+  // 加载状态
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-indigo-600 mx-auto mb-4"></div>
+          <p className="text-xl text-gray-700">加载单词数据中...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // 错误状态
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center p-6">
+        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center">
+          <div className="text-red-600 mb-4">
+            <X size={64} className="mx-auto" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">加载失败</h2>
+          <p className="text-gray-600 mb-4">{error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+          >
+            刷新页面
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // 数据为空
+  if (srsData.length === 0) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center p-6">
+        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center">
+          <BookOpen size={64} className="mx-auto text-gray-400 mb-4" />
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">暂无数据</h2>
+          <p className="text-gray-600">请添加单词卡片到 /public/data/flashcards.json</p>
+        </div>
+      </div>
+    );
+  }
+
 
   if (mode === 'stats') {
     return (

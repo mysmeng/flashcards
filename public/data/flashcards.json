@@ -1,0 +1,110 @@
+{
+  "lessons": [
+    {
+      "lessonNumber": 11,
+      "lessonName": "购物与消费",
+      "cards": [
+        {
+          "id": 1,
+          "word": "電気屋",
+          "reading": "でんきや",
+          "meaning": "电器商店",
+          "level": "N5",
+          "example": "電気屋で新しいテレビを買いました。",
+          "exampleCN": "我在电器店买了新电视。",
+          "romaji": "den-ki-ya de a-ta-ra-shii te-re-bi o ka-i-ma-shi-ta"
+        },
+        {
+          "id": 2,
+          "word": "ほしい",
+          "reading": "ほしい",
+          "meaning": "想要、希望得到",
+          "level": "N5",
+          "example": "新しいカメラがほしいです。",
+          "exampleCN": "我想要新相机。",
+          "romaji": "a-ta-ra-shii ka-me-ra ga ho-shii de-su"
+        },
+        {
+          "id": 3,
+          "word": "得",
+          "reading": "とく",
+          "meaning": "划算，好处",
+          "level": "N3",
+          "example": "このセールは得ですね。",
+          "exampleCN": "这次促销很划算呢。",
+          "romaji": "ko-no se-e-ru wa to-ku de-su ne"
+        },
+        {
+          "id": 4,
+          "word": "性能",
+          "reading": "せいのう",
+          "meaning": "性能",
+          "level": "N3",
+          "example": "このパソコンは性能がいいです。",
+          "exampleCN": "这台电脑性能很好。",
+          "romaji": "ko-no pa-so-kon wa se-i-no-u ga i-i de-su"
+        },
+        {
+          "id": 5,
+          "word": "白い",
+          "reading": "しろい",
+          "meaning": "白色的",
+          "level": "N5",
+          "example": "白いシャツを着ています。",
+          "exampleCN": "我穿着白衬衫。",
+          "romaji": "shi-ro-i sha-tsu o ki-te i-ma-su"
+        },
+        {
+          "id": 6,
+          "word": "重さ",
+          "reading": "おもさ",
+          "meaning": "重量",
+          "level": "N5",
+          "example": "この荷物の重さはどれくらいですか。",
+          "exampleCN": "这个行李有多重？",
+          "romaji": "ko-no ni-mo-tsu no o-mo-sa wa do-re-ku-ra-i de-su ka"
+        },
+        {
+          "id": 7,
+          "word": "どれくらい",
+          "reading": "どれくらい",
+          "meaning": "多少",
+          "level": "N5",
+          "example": "時間はどれくらいかかりますか。",
+          "exampleCN": "需要多长时间？",
+          "romaji": "ji-kan wa do-re-ku-ra-i ka-ka-ri-ma-su ka"
+        },
+        {
+          "id": 8,
+          "word": "キロ",
+          "reading": "キロ",
+          "meaning": "千克、千米",
+          "level": "N5",
+          "example": "体重は60キロです。",
+          "exampleCN": "体重是60公斤。",
+          "romaji": "ta-i-juu wa ro-ku-juu ki-ro de-su"
+        },
+        {
+          "id": 9,
+          "word": "ちょっと",
+          "reading": "ちょっと",
+          "meaning": "稍微，一点儿",
+          "level": "N5",
+          "example": "ちょっと待ってください。",
+          "exampleCN": "请稍等一下。",
+          "romaji": "cho-tto ma-tte ku-da-sa-i"
+        },
+        {
+          "id": 10,
+          "word": "重い",
+          "reading": "おもい",
+          "meaning": "沉重的",
+          "level": "N5",
+          "example": "このスーツケースは重いです。",
+          "exampleCN": "这个行李箱很重。",
+          "romaji": "ko-no su-u-tsu-ke-e-su wa o-mo-i de-su"
+        }
+      ]
+    }
+  ]
+}
