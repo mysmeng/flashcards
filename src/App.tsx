@@ -18,6 +18,8 @@ const FlashcardApp = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  const [swipeDirection, setSwipeDirection] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const loadVoices = () => {
@@ -179,23 +181,41 @@ const FlashcardApp = () => {
   };
 
   const nextCard = () => {
-    if (currentIndex < filteredCards.length - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      setCurrentIndex(0);
-    }
-    setShowAnswer(false);
-    setIsFlipped(false);
+    if (isAnimating) return;
+
+    setIsAnimating(true);
+    setSwipeDirection('left');
+
+    setTimeout(() => {
+      if (currentIndex < filteredCards.length - 1) {
+        setCurrentIndex(prev => prev + 1);
+      } else {
+        setCurrentIndex(0);
+      }
+      setShowAnswer(false);
+      setIsFlipped(false);
+      setSwipeDirection(null);
+      setIsAnimating(false);
+    }, 300);
   };
 
   const prevCard = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(prev => prev - 1);
-    } else {
-      setCurrentIndex(filteredCards.length - 1);
-    }
-    setShowAnswer(false);
-    setIsFlipped(false);
+    if (isAnimating) return;
+
+    setIsAnimating(true);
+    setSwipeDirection('right');
+
+    setTimeout(() => {
+      if (currentIndex > 0) {
+        setCurrentIndex(prev => prev - 1);
+      } else {
+        setCurrentIndex(filteredCards.length - 1);
+      }
+      setShowAnswer(false);
+      setIsFlipped(false);
+      setSwipeDirection(null);
+      setIsAnimating(false);
+    }, 300);
   };
 
   // 触摸滑动处理
@@ -510,12 +530,20 @@ const FlashcardApp = () => {
           )}
 
           <div
-            className={'flip-card ' + (isFlipped ? 'flipped' : '')}
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-            style={{ touchAction: 'pan-y pinch-zoom' }}
+            className={
+              'card-container ' +
+              (swipeDirection === 'left' ? 'swipe-left' : '') +
+              (swipeDirection === 'right' ? 'swipe-right' : '') +
+              (!swipeDirection && !isAnimating ? 'card-enter' : '')
+            }
           >
+            <div
+              className={'flip-card ' + (isFlipped ? 'flipped' : '')}
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+              style={{ touchAction: 'pan-y pinch-zoom' }}
+            >
             <div className="flip-card-inner min-h-[350px]">
               {/* 卡片正面 - 问题 */}
               <div className="flip-card-front">
@@ -606,6 +634,7 @@ const FlashcardApp = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

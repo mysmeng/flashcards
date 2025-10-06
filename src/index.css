@@ -43,3 +43,53 @@ code {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+/* 卡片滑动动画 */
+.card-container {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.card-container.swipe-left {
+  animation: swipeOutLeft 0.3s ease-out forwards;
+}
+
+.card-container.swipe-right {
+  animation: swipeOutRight 0.3s ease-out forwards;
+}
+
+@keyframes swipeOutLeft {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120%) rotate(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes swipeOutRight {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120%) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.card-container.card-enter {
+  animation: cardEnter 0.3s ease-out forwards;
+}
+
+@keyframes cardEnter {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
