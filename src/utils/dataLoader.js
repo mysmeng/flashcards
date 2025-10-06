@@ -17,14 +17,21 @@ export const loadFlashcards = async () => {
 
 /**
  * 将课程数据转换为扁平化的单词卡片列表
+ * @param {Object} lessonsData - 包含lessons数组的数据对象
+ * @param {number|null} lessonNumber - 可选,指定要提取的课程号,null表示提取所有课程
  */
-export const transformLessonsToCards = (lessonsData) => {
+export const transformLessonsToCards = (lessonsData, lessonNumber = null) => {
   if (!lessonsData || !lessonsData.lessons) {
     return [];
   }
 
   const cards = [];
   lessonsData.lessons.forEach(lesson => {
+    // 如果指定了课程号,只处理该课程
+    if (lessonNumber !== null && lesson.lessonNumber !== lessonNumber) {
+      return;
+    }
+
     if (lesson.cards && Array.isArray(lesson.cards)) {
       lesson.cards.forEach(card => {
         cards.push({
@@ -37,6 +44,21 @@ export const transformLessonsToCards = (lessonsData) => {
   });
 
   return cards;
+};
+
+/**
+ * 获取所有可用的课程列表
+ */
+export const getAvailableLessons = (lessonsData) => {
+  if (!lessonsData || !lessonsData.lessons) {
+    return [];
+  }
+
+  return lessonsData.lessons.map(lesson => ({
+    lessonNumber: lesson.lessonNumber,
+    lessonName: lesson.lessonName,
+    cardCount: lesson.cards ? lesson.cards.length : 0
+  }));
 };
 
 /**
