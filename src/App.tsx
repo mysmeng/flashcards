@@ -208,6 +208,13 @@ const FlashcardApp = () => {
 
   const onTouchMove = (e) => {
     setTouchEnd(e.targetTouches[0].clientX);
+    // 阻止页面滚动
+    if (touchStart) {
+      const distance = Math.abs(touchStart - e.targetTouches[0].clientX);
+      if (distance > 10) {
+        e.preventDefault();
+      }
+    }
   };
 
   const onTouchEnd = () => {
@@ -507,6 +514,7 @@ const FlashcardApp = () => {
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
+            style={{ touchAction: 'pan-y pinch-zoom' }}
           >
             <div className="flip-card-inner min-h-[350px]">
               {/* 卡片正面 - 问题 */}
