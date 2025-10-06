@@ -421,11 +421,11 @@ const FlashcardApp = () => {
 
           {/* 课程选择器 */}
           {availableLessons.length > 0 && (
-            <div className="mt-4 mb-4">
+            <div className="mt-4 mb-4 w-full px-2">
               <select
                 value={selectedLesson || ''}
                 onChange={(e) => handleLessonChange(Number(e.target.value))}
-                className="px-6 py-3 bg-white border-2 border-indigo-300 rounded-lg text-lg font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 transition-colors"
+                className="w-full max-w-md mx-auto block px-4 py-3 bg-white border-2 border-indigo-300 rounded-lg text-base md:text-lg font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 hover:border-indigo-400 transition-colors"
               >
                 {availableLessons.map(lesson => (
                   <option key={lesson.lessonNumber} value={lesson.lessonNumber}>
